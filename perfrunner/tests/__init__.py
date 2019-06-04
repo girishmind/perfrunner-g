@@ -9,7 +9,7 @@ from perfrunner.helpers import local
 from perfrunner.helpers.cluster import ClusterManager
 from perfrunner.helpers.memcached import MemcachedHelper
 from perfrunner.helpers.metrics import MetricHelper
-from perfrunner.helpers.misc import pretty_dict
+from perfrunner.helpers.misc import pretty_dict,read_json
 from perfrunner.helpers.monitor import Monitor
 from perfrunner.helpers.profiler import Profiler
 from perfrunner.helpers.remote import RemoteHelper
@@ -218,6 +218,21 @@ class PerfTest:
 
         for statement in self.test_config.index_settings.statements:
             self.rest.exec_n1ql_statement(self.query_nodes[0], statement)
+
+        if self.test_config.index_settings.couchbase_fts_index_name:
+            self.create_fts_index_n1ql()
+
+    def create_fts_index_n1ql(self):
+        definition = read_json(self.test_config.index_settings.couchbase_fts_index_configfile)
+        definition.update({
+            'name': self.test_config.index_settings.couchbase_fts_index_name
+        })
+        logger.info('Index definition: {}'.format(pretty_dict(definition)))
+        self.rest.create_fts_index(self.fts_nodes[0],
+                                   self.test_config.index_settings.couchbase_fts_index_name, definition)
+        self.monitor.monitor_fts_indexing_queue(self.fts_nodes[0],
+                                                self.test_config.index_settings.couchbase_fts_index_name,
+                                                int(self.test_config.access_settings.items))
 
     def create_functions(self):
         logger.info('Creating n1ql functions')
