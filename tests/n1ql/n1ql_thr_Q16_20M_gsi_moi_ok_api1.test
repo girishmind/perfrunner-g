@@ -1,0 +1,53 @@
+[test_case]
+test = perfrunner.tests.n1ql.N1QLThroughputTest
+
+[showfast]
+title = Q16, Index Projection, MOI, not_bounded, API1
+component = n1ql
+category = API2
+sub_category = MOI
+
+[cluster]
+mem_quota = 20480
+index_mem_quota = 100000
+initial_nodes = 6
+num_buckets = 1
+
+[compaction]
+db_percentage = 100
+
+[bucket]
+replica_number = 0
+
+[secondary]
+indexer.settings.storage_mode = memory_optimized
+
+[load]
+items = 20000000
+size = 1024
+workers = 80
+doc_gen = reverse_lookup
+
+[index]
+statements =
+    CREATE INDEX idx ON `bucket-1`(email, name, street, city, county, country, `realm`, capped_small, alt_email);
+
+[n1ql]
+max-index-api = 1
+
+[access]
+creates = 0
+reads = 0
+updates = 100
+deletes = 0
+throughput = 30000
+items = 20000000
+workers = 20
+time = 1200
+n1ql_queries = index-projection
+n1ql_workers = 480
+
+[n1ql-index-projection]
+statement = SELECT email, alt_email FROM `bucket-1` WHERE email = $1;
+scan_consistency = not_bounded
+args = ["{email}"]

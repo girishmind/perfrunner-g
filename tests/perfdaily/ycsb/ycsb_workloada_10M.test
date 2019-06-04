@@ -1,0 +1,33 @@
+[test_case]
+test = perfdaily.ycsb.YCSBThroughputTest
+
+[showfast]
+title = Workload A, 10M items, single node, 8 vCPU
+component = YCSB
+
+[cluster]
+mem_quota = 20480
+initial_nodes = 1
+num_buckets = 1
+online_cores = 4
+ipv6 = 1
+
+[bucket]
+replica_number = 0
+
+[load]
+workload_path = workloads/workloada
+items = 10000000
+workers = 120
+
+[access]
+workload_path = workloads/workloada
+items = 10000000
+workers = 72
+ops = 1000000000
+time = 600
+boost = 12
+
+[stats]
+interval = 1
+client_processes = java

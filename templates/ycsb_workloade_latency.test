@@ -1,0 +1,38 @@
+[test_case]
+test = perfrunner.tests.ycsb.YCSBN1QLLatencyTest
+
+[showfast]
+title = Latency (ms), Workload E, MOI, {{server_instances}} nodes, AWS, {{instance}}
+component = n1ql
+category = ycsb
+sub_category = MOI
+
+[cluster]
+mem_quota = {{ mem_quota * 3 // 4}}
+index_mem_quota = {{ mem_quota // 4 }}
+initial_nodes = {{server_instances}}
+num_buckets = 1
+
+[compaction]
+db_percentage = 100
+
+[bucket]
+replica_number = 0
+
+[secondary]
+indexer.settings.storage_mode = memory_optimized
+
+[load]
+workload_path = workloads/workloade
+workers = 40
+
+[index]
+statements =
+    CREATE PRIMARY INDEX primary_idx ON `bucket-1` WITH {"num_replica": {{num_replica}}};
+
+[access]
+workload_path = workloads/workloade
+ops = 1000000000
+workers = {{ workers }}
+workload_instances = {{ workload_instances }}
+timeseries = 1

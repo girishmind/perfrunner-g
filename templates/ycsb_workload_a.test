@@ -1,0 +1,21 @@
+[test_case]
+test = perfrunner.tests.ycsb.YCSBThroughputTest
+
+[showfast]
+title = Avg Throughput (queries/sec), Workload A, MOI, {{server_instances}} nodes, AWS, {{instance}}
+component = kv
+category = ycsb
+
+[cluster]
+mem_quota = {{ mem_quota }}
+initial_nodes = {{server_instances}}
+
+[load]
+workload_path = workloads/workloada
+workers = 40
+
+[access]
+workload_path = workloads/workloada
+ops = 1000000000
+workers = {{ workers }}
+workload_instances = {{ workload_instances }}

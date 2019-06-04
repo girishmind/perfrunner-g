@@ -1,0 +1,32 @@
+{
+    "Analytics": [],
+    "Eventing": [
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput100M_timer_bktop.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput50M_timer_bktop_512bytes_context.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput100M_timer_noop.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput50M_timer_noop_512bytes_context.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput100M_create_timer.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput50M_create_timer_512bytes_context.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput20M_multiple_timer_noop.test"},
+        {"job": "themis", "cluster": "themis_eventing_rebalance.spec", "test_config": "throughput50M_timer_bktop_eventing_rebalance_512bytes_context.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "undeploy_time50M_timer_512bytes_context.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput50M_timer_bktop_rebalance.test"}
+    ],
+    "FTS": [],
+    "GSI": [],
+    "KV": [],
+    "KV-DGM": [],
+    "KV-Windows":[],
+    "N1QL": [],
+    "N1QL-Arke": [],
+    "N1QL-Windows": [],
+    "Rebalance": [],
+    "Rebalance-Large-Scale": [],
+    "Tools": [],
+    "Views": [],
+    "XDCR": [],
+    "XDCR-Windows": [],
+    "YCSB": []
+
+
+}

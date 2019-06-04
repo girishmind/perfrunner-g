@@ -1,0 +1,54 @@
+---
+- hosts: kv:index:n1ql:analytics
+  vars:
+    couchbase_home: /opt/couchbase
+    data_dir: /data
+    index_dir: /index
+  tasks:
+  - name: killing the processes
+    shell: 'killall -I -g -q -s SIGKILL {{item}} || true'
+    with_items:
+      - epmd
+      - beam.smp
+      - cbq-engine
+      - cbft
+      - couch_view_index_updater
+      - goport
+      - goxdcr
+      - java
+      - indexer
+      - memcached
+      - moxi
+      - mongod
+      - mongos
+      - mysqld
+      - sync_gateway
+
+  - name: uninstalling the database packages
+    yum: state=absent name={{item}}
+    with_items:
+      - 'couchbase*'
+      - 'mongodb*'
+      - 'MariaDB*'
+
+  - name: removing Couchbase Server files
+    file: path={{ couchbase_home }} state=absent
+
+  - name: removing the files remaining in the "{{ data_dir }}" directory
+    shell: rm -fr {{ data_dir }}/*
+    args:
+      warn: no
+
+  - stat: path={{ index_dir }}
+    register: index
+
+  - name: removing the files remaining in the "{{ index_dir }}" directory
+    shell: rm -fr {{ index_dir }}/*
+    when: index.stat.exists
+    args:
+      warn: no
+
+  - name: removing MySQL installation (if any)
+    shell: rm -fr /var/lib/mysql
+    args:
+      warn: no

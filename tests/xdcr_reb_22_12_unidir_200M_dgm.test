@@ -1,0 +1,27 @@
+[test_case]
+test = perfrunner.tests.rebalance.RebalanceWithXdcrInitTest
+
+[showfast]
+title = Avg. initial XDCR rate (items/sec), 2 -> 2 changes to 1 -> 2 (2 source nozzles, 4 target nozzles), 1 bucket x 200M x 1KB
+component = xdcr
+category = reb
+
+[stats]
+server_processes = goxdcr
+
+[cluster]
+mem_quota = 204800
+initial_nodes = 2 1
+num_buckets = 1
+
+[xdcr_cluster]
+sourceNozzlePerNode = 2
+targetNozzlePerNode = 4
+
+[load]
+items = 200000000
+size = 1024
+workers = 40
+
+[rebalance]
+nodes_after = 2 2

@@ -1,0 +1,36 @@
+[test_case]
+test = perfrunner.tests.rebalance.RebalanceKVTest
+
+[showfast]
+title = Rebalance-in (min), 9 -> 10, 500M x 1KB, 50K ops/sec, Ephemeral
+component = reb
+category = kv
+sub_category = Non-DGM
+
+[cluster]
+mem_quota = 220160
+initial_nodes = 9
+num_buckets = 1
+
+[bucket]
+bucket_type = ephemeral
+eviction_policy = nruEviction
+
+[load]
+items = 500000000
+size = 1024
+workers = 125
+
+[access]
+creates = 0
+reads = 50
+updates = 50
+deletes = 0
+throughput = 50000
+items = 500000000
+workers = 40
+
+[rebalance]
+nodes_after = 10
+start_after = 60
+stop_after = 60

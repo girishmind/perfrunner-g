@@ -1,0 +1,31 @@
+[test_case]
+test = perfdaily.kv.DCPThroughputTest
+
+[showfast]
+title = DCP, 250M x 1KB items, DGM
+threshold = -15
+component = KV
+
+[stats]
+client_processes = dcptest
+
+[cluster]
+mem_quota = 51200
+initial_nodes = 1
+num_buckets = 1
+ipv6 = 1
+
+[bucket]
+replica_number = 0
+eviction_policy = fullEviction
+
+[compaction]
+db_percentage = 100
+
+[load]
+items = 250000000
+size = 1024
+workers = 40
+
+[dcp]
+num_connections = 8

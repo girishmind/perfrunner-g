@@ -1,0 +1,26 @@
+[test_case]
+test = perfdaily.tools.BackupTest
+
+[showfast]
+title = Backup, 100M x 1KB items, DGM, Idle
+component = Tools
+
+[stats]
+client_processes = cbbackupmgr
+
+[cluster]
+mem_quota = 52428
+initial_nodes = 4
+num_buckets = 1
+ipv6 = 1
+
+[compaction]
+db_percentage = 100
+
+[load]
+items = 100000000
+size = 1024
+workers = 100
+
+[backup]
+threads = 16

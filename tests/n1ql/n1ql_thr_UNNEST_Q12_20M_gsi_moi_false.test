@@ -1,0 +1,51 @@
+[test_case]
+test = perfrunner.tests.n1ql.N1QLJoinThroughputTest
+
+[showfast]
+title = Q12, UNNEST 100, MOI, request_plus
+component = n1ql
+category = join_unnest
+
+[cluster]
+mem_quota = 51200
+index_mem_quota = 300000
+initial_nodes = 6
+num_buckets = 1
+
+[compaction]
+db_percentage = 100
+
+[bucket]
+replica_number = 0
+
+[secondary]
+indexer.settings.storage_mode = memory_optimized
+
+[load]
+items = 20000000
+size = 1024
+workers = 80
+doc_gen = join
+
+[index]
+statements =
+    CREATE INDEX by_replies ON `bucket-1`(ALL ARRAY r.`user` FOR r IN replies END, title);
+
+[access]
+creates = 0
+reads = 0
+updates = 100
+deletes = 0
+throughput = 30000
+items = 20000000
+workers = 20
+time = 1200
+n1ql_gen = join
+n1ql_queries = unnest
+n1ql_workers = 720
+n1ql_batch_size = 10
+
+[n1ql-unnest]
+statement = SELECT t.title FROM `bucket-1` t UNNEST t.replies AS r WHERE r.`user` = $1;
+scan_consistency = request_plus
+args = ["{key}"]

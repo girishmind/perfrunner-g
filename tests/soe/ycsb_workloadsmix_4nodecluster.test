@@ -1,0 +1,58 @@
+[test_case]
+test = perfrunner.tests.ycsb.YCSBSOETest
+reset_workers = 1
+
+[showfast]
+title = Avg Throughput (queries/sec), Workload SMIX, 4 node
+component = n1ql
+category = soe
+
+[cluster]
+mem_quota = 15000
+index_mem_quota = 35000
+initial_nodes = 4
+num_buckets = 1
+
+[bucket]
+replica_number = 0
+
+[secondary]
+indexer.settings.storage_mode = memory_optimized
+
+[load]
+workload_path = workloads/soe/workloadsmix
+items = 10000000
+recorded_load_cache_size = 100000
+workers = 100
+workload_instances = 6
+inserts_per_workerinstance = 10000000
+
+[index]
+statements =
+    CREATE PRIMARY INDEX primary_idx ON `bucket-1` WITH {"num_replica": 3, "defer_build": true}
+    CREATE INDEX idx1 ON `bucket-1`(address.zip) WITH {"num_replica": 3, "defer_build": true};
+    CREATE INDEX idx2 ON `bucket-1`(address.country, age_group, DATE_PART_STR(dob,'year')) WITH {"num_replica": 3, "defer_build": true};
+    CREATE INDEX idx3 ON `bucket-1`(address.prev_address.zip) WITH {"num_replica": 3, "defer_build": true};
+    CREATE INDEX idx4 ON `bucket-1`(DISTINCT devices) WITH {"num_replica": 3, "defer_build": true};
+    CREATE INDEX idx5 ON `bucket-1`(DISTINCT ARRAY (DISTINCT ARRAY (v.country || "." || c) FOR c IN v.cities END) FOR v IN visited_places END) WITH {"num_replica": 3, "defer_build": true};
+    CREATE INDEX idx6 ON `bucket-1`(address.zip, order_list) WITH {"num_replica": 3, "defer_build": true};
+    CREATE INDEX idx7 ON `bucket-1`(address.zip, month, order_list, sale_price) WITH {"num_replica": 3, "defer_build": true};
+    BUILD  INDEX ON `bucket-1`(primary_idx, idx1, idx2, idx3, idx4, idx5, idx6, idx7);
+
+[access]
+workload_path = workloads/soe/workloadsmix
+items = 10000000
+recorded_load_cache_size = 100000
+ops = 500000000
+time = 600
+workers = 100
+workload_instances = 4
+inserts_per_workerinstance = 10000000
+
+[ycsb]
+branch = soe
+
+[restore]
+backup_storage = /backups
+backup_repo = soe10M
+

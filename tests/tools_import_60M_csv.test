@@ -1,0 +1,24 @@
+[test_case]
+test = perfrunner.tests.tools.ImportSampleDataTest
+
+[showfast]
+title = Import CSV (Avg. MB/sec), 4 nodes, 1 bucket x 60M x 1KB, Idle
+component = tools
+category = import
+
+[stats]
+client_processes = cbimport
+
+[cluster]
+mem_quota = 52428
+initial_nodes = 4
+num_buckets = 1
+
+[compaction]
+db_percentage = 100
+
+[export]
+threads = 16
+format = lines
+type = csv
+import_file = /data/import/data.csv

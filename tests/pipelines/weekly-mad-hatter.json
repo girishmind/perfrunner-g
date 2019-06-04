@@ -1,0 +1,55 @@
+{
+    "Analytics": [],
+    "Eventing": [
+        {"job": "themis", "cluster": "themis.spec", "test_config": "throughput100M_fun_bktop_src_bkt_mut.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "curl/latency100M_fun_curl_https_json_200ms.test"},
+        {"job": "themis", "cluster": "themis.spec", "test_config": "curl/throughput100M_fun_curl_https_json_200ms.test"},
+        {"job": "themis", "cluster": "themis_eventing_rebalance.spec", "test_config": "curl/throughput50M_fun_curl_https_json_eventing_rebalance.test"}
+    ],
+    "FTS": [],
+    "GSI": [],
+    "KV": [],
+    "KV-DGM": [],
+    "KV-Windows":[],
+    "N1QL": [],
+    "N1QL-Arke": [
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF1_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF1_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF2_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF3_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF3_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF4_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF5_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF5_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF6_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF6_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF7_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF7_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF8_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF8_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF9_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF9_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_lat_WF10_100M_plasma_ok.test"},
+        {"job": "arke",              "cluster": "arke.spec", "test_config": "tpc-ds/n1ql_thr_WF10_100M_plasma_ok.test"}
+    ],
+    "N1QL-Windows": [],
+    "Rebalance": [],
+    "Rebalance-Large-Scale": [],
+    "Tools": [],
+    "Views": [],
+    "XDCR": [
+        {"job": "titan", "cluster": "titan_1x1x1.spec", "test_config": "xdcr_init_1x1_unidir_100M_2links_proiority_high_high.test"},
+        {"job": "titan", "cluster": "titan_1x1x1.spec", "test_config": "xdcr_init_1x1_unidir_100M_2links_proiority_high_low.test"},
+        {"job": "titan", "cluster": "titan_5x5.spec", "test_config": "xdcr_init_1x1_unidir_100M_opt_with_advfilter_arraymatch_100.test"},
+        {"job": "titan", "cluster": "titan_5x5.spec", "test_config": "xdcr_init_1x1_unidir_100M_opt_with_advfilter_matchbody_100.test"},
+        {"job": "titan", "cluster": "titan_5x5.spec", "test_config": "xdcr_init_1x1_unidir_100M_opt_with_advfilter_matchxattr_100.test"},
+        {"job": "titan", "cluster": "titan_5x5.spec", "test_config": "xdcr_init_1x1_unidir_100M_opt_with_advfilter_matchxattr_compression_active.test"},
+        {"job": "titan", "cluster": "titan_5x5.spec", "test_config": "xdcr_init_1x1_unidir_100M_opt_with_xattr_nofilter.test"},
+        {"job": "titan", "cluster": "titan_1x1x1.spec", "test_config": "xdcr_ongoing_1x1x1_unidir_updates_8k_proiority_high_high.test"},
+        {"job": "titan", "cluster": "titan_1x1x1.spec", "test_config": "xdcr_ongoing_backfill_1x1x1_unidir_updates_8k_proiority_low_high.test"}
+    ],
+    "XDCR-Windows": [],
+    "YCSB": []
+
+
+}

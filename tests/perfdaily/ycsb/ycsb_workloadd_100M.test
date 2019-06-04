@@ -1,0 +1,25 @@
+[test_case]
+test = perfdaily.ycsb.YCSBThroughputTest
+
+[showfast]
+title = Workload D, 100M items, two nodes, 10 vCPU
+component = YCSB
+
+[cluster]
+mem_quota = 51200
+initial_nodes = 2
+num_buckets = 1
+online_cores = 5
+ipv6 = 1
+
+[load]
+workload_path = workloads/workloadd
+items = 100000000
+workers = 25
+
+[access]
+workload_path = workloads/workloadd
+items = 100000000
+workers = 160
+ops = 1000000000
+time = 900

@@ -1,0 +1,28 @@
+---
+- hosts: kv:index:n1ql:analytics
+  tasks:
+  - name: upgrading packages on the system
+    yum: state=latest name=epel-release
+  - name: installing additional packages
+    yum: state=latest name={{item}}
+    with_items:
+      - atop
+      - fio
+      - gdb
+      - hdparm
+      - htop
+      - iotop
+      - iperf
+      - kernel-devel
+      - kernel-headers
+      - java-1.8.0-openjdk
+      - lsof
+      - moreutils
+      - net-tools
+      - numactl
+      - psmisc
+      - rsync
+      - sysstat
+      - tree
+      - vim
+      - wget

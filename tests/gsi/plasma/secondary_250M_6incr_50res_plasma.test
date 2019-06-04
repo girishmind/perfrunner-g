@@ -1,0 +1,49 @@
+[test_case]
+test = perfrunner.tests.secondary.MultipleIncrementalSecondaryIndexTest
+
+[showfast]
+title = 1 bucket x 250M, single 2i index, 100K KV ops/sec, running incremental load 6 times, 50%% Resident, PLASMA
+component = secondary
+category = incremental
+sub_category = PlasmaDGM
+
+[stats]
+server_processes = projector
+
+[cluster]
+mem_quota = 30000
+index_mem_quota = 35512
+initial_nodes = 6
+num_buckets = 1
+kernel_mem_limit = 49390M
+
+[compaction]
+db_percentage = 100
+view_percentage = 100
+
+[bucket]
+replica_number=0
+replica_index=0
+
+[load]
+items = 250000000
+size = 17
+workers = 100
+doc_gen = sequential_plasma
+key_fmtr = hash
+
+[secondary]
+indexes = myindex:city
+incremental_load_iterations = 6
+indexer.settings.storage_mode = plasma
+indexer.settings.max_cpu_percent = 4800
+
+[access]
+updates = 100
+ops = 250000000
+items = 250000000
+throughput = 100000
+workers = 100
+working_set = 20
+working_set_access = 100
+working_set_move_time = 120

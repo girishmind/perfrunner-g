@@ -1,0 +1,38 @@
+---
+- hosts: clients
+  tasks:
+  - name: upgrading packages on the system
+    apt: upgrade=dist
+  - name: installing additional packages
+    apt: name={{item}} update_cache=yes
+    with_items:
+      - atop
+      - cpufrequtils
+      - git
+      - golang-go
+      - htop
+      - libcurl4-gnutls-dev
+      - libffi-dev
+      - libsnappy-dev
+      - libssl-dev
+      - linux-tools-generic
+      - maven
+      - nvi
+      - openjdk-8-jdk
+      - python-pip
+      - python-virtualenv
+      - python3-dev
+      - sshpass
+      - rpm2cpio
+      - memcached
+  - name: adding Couchbase repository
+    apt: deb=http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-4-amd64.deb
+  - name: installing libcouchbase
+    apt: name={{item}} update_cache=yes
+    with_items:
+    - build-essential
+    - libcouchbase-dev
+    - libcouchbase2-bin
+    - libcouchbase2-libevent
+  - name: disabling scheduled fstrim jobs
+    file: path=/etc/cron.weekly/fstrim state=absent

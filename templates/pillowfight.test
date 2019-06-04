@@ -1,0 +1,16 @@
+[test_case]
+test = perfrunner.tests.kv.PillowFightTest
+
+[cluster]
+mem_quota = {{ mem_quota }}
+initial_nodes = 1
+
+[load]
+size = 1024
+workers = 20
+
+[access]
+iterations = 10000
+updates = 50
+workers = {{ workers }}
+workload_instances = {{ workload_instances }}

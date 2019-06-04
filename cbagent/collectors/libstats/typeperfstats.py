@@ -1,0 +1,36 @@
+from cbagent.collectors.libstats.remotestats import RemoteStats, parallel_task
+
+
+class TPStats(RemoteStats):
+
+    METRICS = (
+        ("rss", 1),    # already in bytes
+    )
+
+    def __init__(self, hosts, workers, user, password):
+        super().__init__(hosts, workers, user, password)
+        self.typeperf_cmd = "typeperf \"\\Process(*{}*)\\Working Set\" -sc 1|sed '3q;d'"
+
+    @parallel_task(server_side=True)
+    def get_server_samples(self, process):
+        samples = {}
+        if process == "beam.smp":
+            stdout = self.run(self.typeperf_cmd.format("erl"))
+            values = stdout.split(',')[1:5]
+        elif process == "memcached":
+            stdout = self.run(self.typeperf_cmd.format(process))
+            values = stdout.split(',')[1:2]
+        else:
+            return samples
+        sum_rss = 0
+        if stdout:
+            for v in values:
+                v = float(v.replace('"', ''))
+                sum_rss += v
+            metric, multiplier = self.METRICS[0]
+            title = "{}_{}".format(process, metric)
+            samples[title] = float(sum_rss) * multiplier
+            return samples
+
+    def get_client_samples(self, process):
+        pass
