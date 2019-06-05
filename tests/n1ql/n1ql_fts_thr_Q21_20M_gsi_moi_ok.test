@@ -10,6 +10,7 @@ sub_category = MOI
 [cluster]
 mem_quota = 20480
 index_mem_quota = 100000
+fts_index_mem_quota = 8000
 initial_nodes = 6
 num_buckets = 1
 
