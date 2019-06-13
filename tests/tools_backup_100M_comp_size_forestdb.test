@@ -1,8 +1,8 @@
 [test_case]
-test = perfrunner.tests.tools.BackupIncrementalTest
+test = perfrunner.tests.tools.BackupSizeTest
 
 [showfast]
-title = 4 nodes, 1 bucket x 400M x 1KB; 50% additional; 10% Upserts; 10% Deletes, DGM, Idle
+title = 4 nodes, 1 bucket x 100M x 1KB, DGM, Idle, Compressed
 component = tools
 category = backup
 sub_category = ForestDB
@@ -19,17 +19,11 @@ num_buckets = 1
 db_percentage = 100
 
 [load]
-items = 400000000
+items = 100000000
 size = 1024
 workers = 100
-creates = 80000000
-
-[access]
-creates = 100000
-deletes = 100000
-workers = 100
-time = 40
 
 [backup]
+compression = 1
 threads = 16
 storage_type = forestdb

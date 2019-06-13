@@ -1,11 +1,11 @@
 [test_case]
-test = perfrunner.tests.tools.BackupIncrementalTest
+test = perfrunner.tests.tools.BackupXATTRTest
 
 [showfast]
-title = 4 nodes, 1 bucket x 100M x 1KB; 50% additional; 10% Upserts; 10% Deletes, DGM, Idle
+title = 4 nodes, 1 bucket x 100M x 1KB, DGM, Idle, XATTR
 component = tools
 category = backup
-sub_category = ForestDB
+sub_category = SQLite
 
 [stats]
 client_processes = cbbackupmgr
@@ -22,14 +22,13 @@ db_percentage = 100
 items = 100000000
 size = 1024
 workers = 100
-creates = 50000000
 
-[access]
-creates = 100000
-deletes = 100000
+[xattr_load]
+items = 100000000
+size = 1024
 workers = 100
-time = 10
+xattr_field = city
 
 [backup]
 threads = 16
-storage_type = forestdb
+storage_type = sqlite
