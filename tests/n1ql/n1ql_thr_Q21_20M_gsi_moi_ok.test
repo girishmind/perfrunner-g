@@ -20,7 +20,7 @@ db_percentage = 100
 replica_number = 0
 
 [secondary]
-indexer.settings.storage_mode = memory_optimized
+indexer.settings.storage_mode = plasma
 
 [load]
 items = 20000000
@@ -45,6 +45,6 @@ n1ql_queries = count-distinct
 n1ql_workers = 480
 
 [n1ql-count-distinct]
-statement = SELECT COUNT(DISTINCT year) FROM `bucket-1` WHERE capped_small = $1;
+statement = SELECT meta().id FROM `bucket-1` WHERE capped_small = $1;
 scan_consistency = not_bounded
 args = ["{capped_small}"]
