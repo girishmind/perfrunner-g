@@ -30,7 +30,7 @@ doc_gen = reverse_lookup
 
 [index]
 statements =
-    CREATE INDEX idx ON `bucket-1`(capped_small, year);
+    CREATE INDEX idx ON `bucket-1`(capped_small);
 
 [access]
 creates = 0
@@ -45,6 +45,6 @@ n1ql_queries = count-distinct
 n1ql_workers = 480
 
 [n1ql-count-distinct]
-statement = SELECT meta().id FROM `bucket-1` WHERE capped_small = $1;
+statement = SELECT meta().id FROM `bucket-1` WHERE capped_small = "dedf23";
 scan_consistency = not_bounded
 args = ["{capped_small}"]
