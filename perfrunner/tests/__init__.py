@@ -216,10 +216,10 @@ class PerfTest:
     def create_indexes(self):
         logger.info('Creating and building indexes')
 
-        for statement in self.test_config.index_settings.statements:
-            self.rest.exec_n1ql_statement(self.query_nodes[0], statement)
-
-        if self.test_config.index_settings.couchbase_fts_index_name:
+        if not self.test_config.index_settings.couchbase_fts_index_name:
+            for statement in self.test_config.index_settings.statements:
+                self.rest.exec_n1ql_statement(self.query_nodes[0], statement)
+        else:
             self.create_fts_index_n1ql()
 
     def create_fts_index_n1ql(self):
