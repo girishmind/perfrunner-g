@@ -23,7 +23,7 @@ replica_number = 0
 indexer.settings.storage_mode = plasma
 
 [load]
-items = 20000000
+items = 100000
 size = 1024
 workers = 80
 doc_gen = reverse_lookup
@@ -38,9 +38,9 @@ reads = 0
 updates = 100
 deletes = 0
 throughput = 30000
-items = 20000000
+items = 1000000
 workers = 20
-time = 1200
+time = 120
 n1ql_queries = count-distinct
 n1ql_workers = 480
 
