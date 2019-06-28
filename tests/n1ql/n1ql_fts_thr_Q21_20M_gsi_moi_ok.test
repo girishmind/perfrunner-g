@@ -24,7 +24,7 @@ replica_number = 0
 indexer.settings.storage_mode = plasma
 
 [load]
-items = 1000000
+items = 20000000
 size = 1024
 workers = 80
 doc_gen = reverse_lookup
@@ -41,13 +41,13 @@ reads = 0
 updates = 100
 deletes = 0
 throughput = 30000
-items = 1000000
+items = 20000000
 workers = 20
 time = 120
 n1ql_queries = count-distinct
 n1ql_workers = 480
 
 [n1ql-count-distinct]
-statement = SELECT meta().id FROM `bucket-1` AS t1 WHERE SEARCH(t1, "capped_small:a208de", {"index":"perf_fts_index"})
+statement = SELECT meta().id FROM `bucket-1` AS t1 WHERE SEARCH(t1, "capped_small:dedf23", {"index":"perf_fts_index"})
 scan_consistency = not_bounded
 args = ["{capped_small}"]
