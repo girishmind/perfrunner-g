@@ -53,4 +53,4 @@ scan_consistency = not_bounded
 args = ["{capped_small}"]
 
 [profiling]
-services = n1ql,fts
+services = n1ql
