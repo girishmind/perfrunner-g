@@ -51,3 +51,6 @@ n1ql_workers = 480
 statement = SELECT meta().id FROM `bucket-1` AS t1 WHERE SEARCH(t1, "capped_small:dedf23", {"index":"perf_fts_index"})
 scan_consistency = not_bounded
 args = ["{capped_small}"]
+
+[profiling]
+services = n1ql,fts
