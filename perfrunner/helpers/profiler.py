@@ -81,7 +81,9 @@ class Profiler:
 
         with self.new_tunnel(host, port) as tunnel:
             url = endpoint.format(tunnel.local_bind_port)
+            print(url)
             response = requests.get(url=url, auth=self.rest.auth)
+            print(response.content)
             self.save(host, service, profile, response.content)
 
     def timer(self, **kwargs):
