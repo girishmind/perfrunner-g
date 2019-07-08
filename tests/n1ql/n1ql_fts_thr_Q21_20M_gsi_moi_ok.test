@@ -43,7 +43,7 @@ deletes = 0
 throughput = 30000
 items = 20000000
 workers = 20
-time = 120
+time = 1200
 n1ql_queries = count-distinct
 n1ql_workers = 480
 
