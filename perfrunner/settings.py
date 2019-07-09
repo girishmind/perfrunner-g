@@ -275,9 +275,9 @@ class StatsSettings:
 
 class ProfilingSettings:
 
-    INTERVAL = 30  # 30 seconds
+    INTERVAL = 120  # 30 seconds
 
-    NUM_PROFILES = 10
+    NUM_PROFILES = 1
 
     PROFILES = 'cpu'
 
