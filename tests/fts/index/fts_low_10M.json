@@ -1,0 +1,117 @@
+{
+  "type": "fulltext-index",
+  "name": "",
+  "uuid": "",
+  "sourceType": "couchbase",
+  "sourceName": "",
+  "sourceUUID": "",
+  "planParams": {
+    "maxPartitionsPerPIndex": 171,
+    "indexPartitions": 6
+  },
+  "params": {
+    "doc_config": {
+      "docid_prefix_delim": "",
+      "docid_regexp": "",
+      "mode": "type_field",
+      "type_field": "type"
+    },
+    "mapping": {
+      "analysis": {},
+      "default_analyzer": "standard",
+      "default_datetime_parser": "dateTimeOptional",
+      "default_field": "_all",
+      "default_mapping": {
+        "dynamic": false,
+        "enabled": true,
+        "properties": {
+          "1x3": {
+            "dynamic": false,
+            "enabled": true,
+            "fields": [
+              {
+                "index": true,
+                "name": "text",
+                "type": "text"
+              }
+            ]
+          },
+          "3x6": {
+            "dynamic": false,
+            "enabled": true,
+            "fields": [
+              {
+                "index": true,
+                "name": "text",
+                "type": "text"
+              }
+            ]
+          },
+          "4x6": {
+            "dynamic": false,
+            "enabled": true,
+            "fields": [
+              {
+                "index": true,
+                "name": "text",
+                "type": "text"
+              }
+            ]
+          },
+          "rand_sent": {
+            "dynamic": false,
+            "enabled": true,
+            "fields": [
+              {
+                "index": true,
+                "name": "text",
+                "type": "text"
+              }
+            ]
+          },
+          "sub": {
+            "dynamic": false,
+            "enabled": true,
+            "properties": {
+              "10x6l": {
+                "dynamic": false,
+                "enabled": true,
+                "fields": [
+                  {
+                    "docvalues": true,
+                    "include_in_all": true,
+                    "include_term_vectors": true,
+                    "index": true,
+                    "name": "text",
+                    "type": "text"
+                  }
+                ]
+              },
+              "2x3": {
+                "dynamic": false,
+                "enabled": true,
+                "fields": [
+                  {
+                    "index": true,
+                    "name": "text",
+                    "type": "text"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "default_type": "_default",
+      "docvalues_dynamic": true,
+      "index_dynamic": true,
+      "store_dynamic": false,
+      "type_field": "_type"
+    },
+    "store": {
+      "indexType": "scorch",
+      "kvStoreName": ""
+    }
+  },
+  "sourceParams": {}
+}
