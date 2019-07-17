@@ -578,6 +578,7 @@ class RestHelper:
 
     def explain_n1ql_statement(self, host: str, statement: str):
         statement = 'EXPLAIN {}'.format(statement)
+        logger.info('Explain statement: {}'.format(statement))
         return self.exec_n1ql_statement(host, statement)
 
     def get_query_stats(self, host: str) -> dict:
