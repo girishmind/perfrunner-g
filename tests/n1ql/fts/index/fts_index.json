@@ -6,8 +6,9 @@
   "sourceName": "bucket-1",
   "sourceUUID": "",
   "planParams": {
-    "maxPartitionsPerPIndex": 171,
-    "indexPartitions": 6
+    "maxPartitionsPerPIndex": 1024,
+    "numReplicas": 0,
+    "indexPartitions": 1
   },
   "params": {
     "doc_config": {
