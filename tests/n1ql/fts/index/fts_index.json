@@ -31,6 +31,7 @@
             "enabled": true,
             "fields": [
               {
+		"include_in_all": true,
                 "index": true,
                 "name": "capped_small",
                 "type": "text"
