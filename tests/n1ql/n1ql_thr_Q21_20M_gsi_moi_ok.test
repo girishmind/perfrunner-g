@@ -45,7 +45,7 @@ n1ql_queries = count-distinct
 n1ql_workers = 480
 
 [n1ql-count-distinct]
-statement = SELECT capped_small FROM `bucket-1` WHERE capped_small = $1;
+statement = SELECT capped_small,year FROM `bucket-1` WHERE capped_small = $1;
 scan_consistency = not_bounded
 args = ["{capped_small}"]
 
