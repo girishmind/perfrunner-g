@@ -574,6 +574,8 @@ class RestHelper:
         }
 
         response = self.post(url=api, data=data)
+        logger.info(response.json())
+
         return response.json()
 
     def explain_n1ql_statement(self, host: str, statement: str):
