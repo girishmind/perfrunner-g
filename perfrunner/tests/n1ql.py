@@ -86,7 +86,7 @@ class N1QLTest(PerfTest):
         self.create_indexes()
         self.wait_for_indexing()
 
-        #self.store_plans()
+        self.store_plans()
 
         self.access_bg()
         self.access()
