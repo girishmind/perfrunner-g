@@ -2,7 +2,7 @@
 test = perfrunner.tests.n1ql.N1QLThroughputTest
 
 [showfast]
-title = QF3, Range Scan, not_bounded, FTS
+title = QF3, Range Scan, , FTS, not_bounded
 component = n1ql
 category = Q1_Q3
 sub_category = FTS
