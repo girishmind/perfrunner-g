@@ -31,7 +31,9 @@ def ycsb_data_load(workload_settings: PhaseSettings,
              replicate_to=workload_settings.replicate_to,
              fieldlength=workload_settings.field_length,
              fieldcount=workload_settings.field_count,
-             durability=workload_settings.durability)
+             durability=workload_settings.durability,
+             kv_endpoints=workload_settings.kv_endpoints,
+             enable_mutation_token=workload_settings.enable_mutation_token)
 
 
 def ycsb_workload(workload_settings: PhaseSettings,
@@ -69,4 +71,6 @@ def ycsb_workload(workload_settings: PhaseSettings,
              cbcollect=workload_settings.cbcollect,
              fieldlength=workload_settings.field_length,
              fieldcount=workload_settings.field_count,
-             durability=workload_settings.durability)
+             durability=workload_settings.durability,
+             kv_endpoints=workload_settings.kv_endpoints,
+             enable_mutation_token=workload_settings.enable_mutation_token)

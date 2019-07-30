@@ -1,5 +1,8 @@
 {
-    "Analytics": [],
+    "Analytics": [
+        {"job": "oceanus", "cluster": "oceanus.spec",     "test_config": "bigfun_20M_queries_2n_no_index_window_functions.test"},
+        {"job": "oceanus", "cluster": "oceanus.spec",     "test_config": "bigfun_20M_queries_4n_no_index_window_functions.test"}
+    ],
     "Eventing": [
         {"job": "themis", "cluster": "themis.spec", "test_config": "throughput100M_fun_bktop_src_bkt_mut.test"},
         {"job": "themis", "cluster": "themis.spec", "test_config": "latency100M_fun_bktop_src_bkt_mut.test"},
@@ -8,7 +11,12 @@
         {"job": "themis", "cluster": "themis_eventing_rebalance.spec", "test_config": "curl/throughput50M_fun_curl_https_json_eventing_rebalance.test"}
     ],
     "FTS": [],
-    "GSI": [],
+    "GSI": [
+        {"job": "secondary-moi",    "cluster": "nyx.spec", "test_config": "new_moi/secondary_scan_moi.test"},
+        {"job": "secondary-moi",    "cluster": "nyx.spec", "test_config": "new_moi/secondary_1M_multiple_moi.test"},
+        {"job": "secondary-plasma", "cluster": "nyx.spec", "test_config": "new_plasma/secondary_scan_plasma.test"},
+        {"job": "secondary-plasma", "cluster": "nyx.spec", "test_config": "new_plasma/secondary_1M_multiple_plasma.test"}
+    ],
     "KV": [],
     "KV-DGM": [],
     "KV-Windows":[],

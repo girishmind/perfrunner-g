@@ -1,0 +1,364 @@
+2019-07-30T11:53:25 [INFO] Reading configuration file: clusters/atlas_setupA.spec
+2019-07-30T11:53:25 [INFO] Reading configuration file: tests/n1ql/n1ql_thr_QF3_20M_fts.test
+2019-07-30T11:53:26 [INFO] Detecting OS
+2019-07-30T11:53:27 [INFO] Detecting OS
+2019-07-30T11:53:27 [INFO] Detecting OS
+2019-07-30T11:53:27 [INFO] Detecting OS
+2019-07-30T11:53:27 [INFO] Getting Couchbase Server version
+2019-07-30T11:53:27 [INFO] Detecting OS
+2019-07-30T11:53:27 [INFO] Terminating Celery workers
+2019-07-30T11:53:28 [INFO] Initializing remote worker environment
+2019-07-30T11:53:59 [INFO] Starting remote Celery worker, host=172.23.99.210
+2019-07-30T11:54:04 [INFO] All remote Celery workers are ready
+2019-07-30T11:54:04 [INFO] Running load phase: {
+    "array_size": 10,
+    "async": false,
+    "batch_size": 1000,
+    "batches": 1,
+    "boost": 48,
+    "cbcollect": 0,
+    "connstr_params": {
+        "enable_tracing": "false",
+        "ipv6": "allow"
+    },
+    "creates": 100,
+    "ddocs": null,
+    "deletes": 0,
+    "doc_gen": "reverse_lookup",
+    "durability": null,
+    "enable_mutation_token": null,
+    "epoll": "true",
+    "field_count": 10,
+    "field_length": 100,
+    "fts_updates_reverse": 0,
+    "fts_updates_swap": 0,
+    "hot_reads": false,
+    "index_type": null,
+    "inserts_per_workerinstance": 0,
+    "item_size": 64,
+    "items": 10000000,
+    "iterations": 1,
+    "key_fmtr": "decimal",
+    "kv_endpoints": 1,
+    "n1ql_batch_size": 100,
+    "n1ql_gen": null,
+    "n1ql_op": "read",
+    "n1ql_throughput": Infinity,
+    "n1ql_timeout": 0,
+    "n1ql_workers": 0,
+    "num_categories": 1000000,
+    "num_replies": 100,
+    "ops": 0.0,
+    "persist_to": 0,
+    "power_alpha": 0.0,
+    "query_params": {},
+    "query_throughput": Infinity,
+    "query_workers": 0,
+    "range_distance": 10,
+    "reads": 0,
+    "reads_and_updates": 0,
+    "recorded_load_cache_size": 0,
+    "replicate_to": 0,
+    "seq_upserts": true,
+    "size": 1024,
+    "size_variation_max": 1024,
+    "size_variation_min": 1,
+    "spring_batch_size": 100,
+    "ssl_keystore_file": "certificates/data.keystore",
+    "ssl_keystore_password": "storepass",
+    "ssl_mode": "none",
+    "subdoc_field": null,
+    "target": 0.0,
+    "throughput": Infinity,
+    "time": 86400,
+    "timeseries": 0,
+    "ttl": 0,
+    "updates": 0,
+    "workers": 80,
+    "working_set": 100.0,
+    "working_set_access": 100,
+    "working_set_move_time": 0,
+    "working_set_moving_docs": 0,
+    "workload_instances": 1,
+    "workload_path": null,
+    "xattr_field": null,
+    "ycsb_client": "couchbase2",
+    "zipf_alpha": 0.0
+}
+2019-07-30T11:54:04 [INFO] Running the task on 172.23.99.210
+2019-07-30T11:54:04 [INFO] Waiting for all tasks to finish
+2019-07-30T11:55:06 [INFO] All tasks are done
+2019-07-30T11:55:06 [INFO] Running load phase: {
+    "array_size": 10,
+    "async": false,
+    "batch_size": 1000,
+    "batches": 1,
+    "boost": 48,
+    "cbcollect": 0,
+    "connstr_params": {
+        "enable_tracing": "false",
+        "ipv6": "allow"
+    },
+    "creates": 100,
+    "ddocs": null,
+    "deletes": 0,
+    "doc_gen": "reverse_lookup",
+    "durability": null,
+    "enable_mutation_token": null,
+    "epoll": "true",
+    "field_count": 10,
+    "field_length": 100,
+    "fts_updates_reverse": 0,
+    "fts_updates_swap": 0,
+    "hot_reads": false,
+    "index_type": null,
+    "inserts_per_workerinstance": 0,
+    "item_size": 64,
+    "items": 10000000,
+    "iterations": 1,
+    "key_fmtr": "decimal",
+    "kv_endpoints": 1,
+    "n1ql_batch_size": 100,
+    "n1ql_gen": null,
+    "n1ql_op": "read",
+    "n1ql_throughput": Infinity,
+    "n1ql_timeout": 0,
+    "n1ql_workers": 0,
+    "num_categories": 1000000,
+    "num_replies": 100,
+    "ops": 0.0,
+    "persist_to": 0,
+    "power_alpha": 0.0,
+    "query_params": {},
+    "query_throughput": Infinity,
+    "query_workers": 0,
+    "range_distance": 10,
+    "reads": 0,
+    "reads_and_updates": 0,
+    "recorded_load_cache_size": 0,
+    "replicate_to": 0,
+    "seq_upserts": true,
+    "size": 1024,
+    "size_variation_max": 1024,
+    "size_variation_min": 1,
+    "spring_batch_size": 100,
+    "ssl_keystore_file": "certificates/data.keystore",
+    "ssl_keystore_password": "storepass",
+    "ssl_mode": "none",
+    "subdoc_field": null,
+    "target": 0.0,
+    "throughput": Infinity,
+    "time": 86400,
+    "timeseries": 0,
+    "ttl": 0,
+    "updates": 0,
+    "workers": 80,
+    "working_set": 100.0,
+    "working_set_access": 100,
+    "working_set_move_time": 0,
+    "working_set_moving_docs": 0,
+    "workload_instances": 1,
+    "workload_path": null,
+    "xattr_field": null,
+    "ycsb_client": "couchbase2",
+    "zipf_alpha": 0.0
+}
+2019-07-30T11:55:06 [INFO] Running the task on 172.23.99.210
+2019-07-30T11:55:06 [INFO] Waiting for all tasks to finish
+2019-07-30T11:56:03 [INFO] All tasks are done
+2019-07-30T11:56:03 [INFO] Monitoring disk queues: bucket-1
+2019-07-30T11:56:03 [INFO] ep_queue_size = 6,180
+2019-07-30T11:56:03 [INFO] ep_flusher_todo = 31
+2019-07-30T11:56:03 [INFO] ep_diskqueue_items = 6,181
+2019-07-30T11:56:03 [INFO] vb_active_queue_size = 6,174
+2019-07-30T11:56:03 [INFO] vb_replica_queue_size reached 0
+2019-07-30T11:56:05 [INFO] ep_queue_size reached 0
+2019-07-30T11:56:05 [INFO] ep_flusher_todo reached 0
+2019-07-30T11:56:05 [INFO] ep_diskqueue_items reached 0
+2019-07-30T11:56:05 [INFO] vb_active_queue_size reached 0
+2019-07-30T11:56:05 [INFO] Monitoring DCP queues: bucket-1
+2019-07-30T11:56:05 [INFO] ep_dcp_replica_items_remaining reached 0
+2019-07-30T11:56:05 [INFO] ep_dcp_other_items_remaining reached 0
+2019-07-30T11:56:05 [INFO] Creating and building indexes
+2019-07-30T11:56:05 [INFO] Index definition: {
+    "name": "perf_fts_index",
+    "params": {
+        "doc_config": {
+            "docid_prefix_delim": "",
+            "docid_regexp": "",
+            "mode": "type_field",
+            "type_field": "type"
+        },
+        "mapping": {
+            "analysis": {},
+            "default_analyzer": "standard",
+            "default_datetime_parser": "dateTimeOptional",
+            "default_field": "_all",
+            "default_mapping": {
+                "dynamic": false,
+                "enabled": true,
+                "properties": {
+                    "capped_small": {
+                        "dynamic": false,
+                        "enabled": true,
+                        "fields": [
+                            {
+                                "include_in_all": true,
+                                "index": true,
+                                "name": "capped_small",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                }
+            },
+            "default_type": "_default",
+            "docvalues_dynamic": true,
+            "index_dynamic": true,
+            "store_dynamic": false,
+            "type_field": "_type"
+        },
+        "store": {
+            "indexType": "scorch",
+            "kvStoreName": ""
+        }
+    },
+    "planParams": {
+        "indexPartitions": 1,
+        "maxPartitionsPerPIndex": 1024,
+        "numReplicas": 0
+    },
+    "sourceName": "bucket-1",
+    "sourceParams": {},
+    "sourceType": "couchbase",
+    "sourceUUID": "",
+    "type": "fulltext-index",
+    "uuid": ""
+}
+2019-07-30T11:56:05 [INFO] Creating a new FTS index: perf_fts_index
+2019-07-30T11:56:05 [INFO] Waiting for indexing to finish
+2019-07-30T11:56:06 [INFO] FTS indexed documents: 0
+2019-07-30T11:56:08 [INFO] FTS indexed documents: 61,764
+2019-07-30T11:56:10 [INFO] FTS indexed documents: 112,543
+2019-07-30T11:56:12 [INFO] FTS indexed documents: 151,931
+2019-07-30T11:56:14 [INFO] FTS indexed documents: 223,910
+2019-07-30T11:56:16 [INFO] FTS indexed documents: 308,487
+2019-07-30T11:56:18 [INFO] FTS indexed documents: 385,458
+2019-07-30T11:56:20 [INFO] FTS indexed documents: 467,827
+2019-07-30T11:56:22 [INFO] FTS indexed documents: 544,997
+2019-07-30T11:56:24 [INFO] FTS indexed documents: 619,968
+2019-07-30T11:56:26 [INFO] FTS indexed documents: 691,740
+2019-07-30T11:56:28 [INFO] FTS indexed documents: 728,526
+2019-07-30T11:56:30 [INFO] FTS indexed documents: 777,705
+2019-07-30T11:56:32 [INFO] FTS indexed documents: 818,891
+2019-07-30T11:56:34 [INFO] FTS indexed documents: 893,662
+2019-07-30T11:56:36 [INFO] FTS indexed documents: 955,835
+2019-07-30T11:56:38 [INFO] FTS indexed documents: 1,028,408
+2019-07-30T11:56:40 [INFO] FTS indexed documents: 1,102,379
+2019-07-30T11:56:42 [INFO] FTS indexed documents: 1,171,549
+2019-07-30T11:56:44 [INFO] FTS indexed documents: 1,228,927
+2019-07-30T11:56:46 [INFO] FTS indexed documents: 1,273,907
+2019-07-30T11:56:48 [INFO] FTS indexed documents: 1,312,091
+2019-07-30T11:56:50 [INFO] FTS indexed documents: 1,366,469
+2019-07-30T11:56:52 [INFO] FTS indexed documents: 1,441,439
+2019-07-30T11:56:54 [INFO] FTS indexed documents: 1,503,412
+2019-07-30T11:56:56 [INFO] FTS indexed documents: 1,537,199
+2019-07-30T11:56:58 [INFO] FTS indexed documents: 1,605,570
+2019-07-30T11:57:00 [INFO] FTS indexed documents: 1,681,739
+2019-07-30T11:57:02 [INFO] FTS indexed documents: 1,753,510
+2019-07-30T11:57:04 [INFO] FTS indexed documents: 1,789,895
+2019-07-30T11:57:07 [INFO] FTS indexed documents: 1,864,864
+2019-07-30T11:57:09 [INFO] FTS indexed documents: 1,936,435
+2019-07-30T11:57:11 [INFO] FTS indexed documents: 2,014,205
+2019-07-30T11:57:13 [INFO] FTS indexed documents: 2,085,775
+2019-07-30T11:57:15 [INFO] FTS indexed documents: 2,146,749
+2019-07-30T11:57:17 [INFO] FTS indexed documents: 2,226,915
+2019-07-30T11:57:19 [INFO] FTS indexed documents: 2,301,883
+2019-07-30T11:57:21 [INFO] FTS indexed documents: 2,364,859
+2019-07-30T11:57:23 [INFO] FTS indexed documents: 2,432,230
+2019-07-30T11:57:25 [INFO] FTS indexed documents: 2,493,411
+2019-07-30T11:57:27 [INFO] FTS indexed documents: 2,525,203
+2019-07-30T11:57:29 [INFO] FTS indexed documents: 2,551,595
+2019-07-30T11:57:31 [INFO] FTS indexed documents: 2,572,589
+2019-07-30T11:57:33 [INFO] FTS indexed documents: 2,601,782
+2019-07-30T11:57:35 [INFO] FTS indexed documents: 2,678,776
+2019-07-30T11:57:37 [INFO] FTS indexed documents: 2,755,376
+2019-07-30T11:57:40 [INFO] FTS indexed documents: 2,825,576
+2019-07-30T11:57:42 [INFO] FTS indexed documents: 2,899,976
+2019-07-30T11:57:44 [INFO] FTS indexed documents: 2,961,176
+2019-07-30T11:57:46 [INFO] FTS indexed documents: 3,021,176
+2019-07-30T11:57:48 [INFO] FTS indexed documents: 3,085,176
+2019-07-30T11:57:50 [INFO] FTS indexed documents: 3,160,576
+2019-07-30T11:57:52 [INFO] FTS indexed documents: 3,216,176
+2019-07-30T11:57:54 [INFO] FTS indexed documents: 3,248,576
+2019-07-30T11:57:56 [INFO] FTS indexed documents: 3,322,176
+2019-07-30T11:57:58 [INFO] FTS indexed documents: 3,380,176
+2019-07-30T11:58:00 [INFO] FTS indexed documents: 3,453,976
+2019-07-30T11:58:02 [INFO] FTS indexed documents: 3,524,376
+2019-07-30T11:58:04 [INFO] FTS indexed documents: 3,587,176
+2019-07-30T11:58:06 [INFO] FTS indexed documents: 3,619,976
+2019-07-30T11:58:08 [INFO] FTS indexed documents: 3,647,776
+2019-07-30T11:58:10 [INFO] FTS indexed documents: 3,668,176
+2019-07-30T11:58:12 [INFO] FTS indexed documents: 3,711,176
+2019-07-30T11:58:14 [INFO] FTS indexed documents: 3,775,176
+2019-07-30T11:58:17 [INFO] FTS indexed documents: 3,842,776
+2019-07-30T11:58:19 [INFO] FTS indexed documents: 3,919,976
+2019-07-30T11:58:21 [INFO] FTS indexed documents: 3,976,576
+2019-07-30T11:58:23 [INFO] FTS indexed documents: 4,048,576
+2019-07-30T11:58:25 [INFO] FTS indexed documents: 4,101,576
+2019-07-30T11:58:27 [INFO] FTS indexed documents: 4,175,976
+2019-07-30T11:58:29 [INFO] FTS indexed documents: 4,242,976
+2019-07-30T11:58:31 [INFO] FTS indexed documents: 4,307,176
+2019-07-30T11:58:33 [INFO] FTS indexed documents: 4,381,576
+2019-07-30T11:58:35 [INFO] FTS indexed documents: 4,428,176
+2019-07-30T11:58:37 [INFO] FTS indexed documents: 4,506,376
+2019-07-30T11:58:39 [INFO] FTS indexed documents: 4,572,576
+2019-07-30T11:58:41 [INFO] FTS indexed documents: 4,635,776
+2019-07-30T11:58:43 [INFO] FTS indexed documents: 4,692,376
+2019-07-30T11:58:45 [INFO] FTS indexed documents: 4,739,376
+2019-07-30T11:58:47 [INFO] FTS indexed documents: 4,764,976
+2019-07-30T11:58:49 [INFO] FTS indexed documents: 4,783,376
+2019-07-30T11:58:51 [INFO] FTS indexed documents: 4,801,976
+2019-07-30T11:58:53 [INFO] FTS indexed documents: 4,855,776
+2019-07-30T11:58:55 [INFO] FTS indexed documents: 4,920,376
+2019-07-30T11:58:57 [INFO] FTS indexed documents: 4,992,176
+2019-07-30T11:58:59 [INFO] FTS indexed documents: 5,057,776
+2019-07-30T11:59:01 [INFO] FTS indexed documents: 5,121,976
+2019-07-30T11:59:03 [INFO] FTS indexed documents: 5,174,776
+2019-07-30T11:59:05 [INFO] FTS indexed documents: 5,243,776
+2019-07-30T11:59:07 [INFO] FTS indexed documents: 5,317,576
+2019-07-30T11:59:09 [INFO] FTS indexed documents: 5,389,376
+2019-07-30T11:59:11 [INFO] FTS indexed documents: 5,441,776
+2019-07-30T11:59:13 [INFO] FTS indexed documents: 5,468,376
+2019-07-30T11:59:16 [INFO] FTS indexed documents: 5,491,176
+2019-07-30T11:59:18 [INFO] FTS indexed documents: 5,511,776
+2019-07-30T11:59:20 [INFO] FTS indexed documents: 5,527,376
+2019-07-30T11:59:22 [INFO] FTS indexed documents: 5,542,576
+2019-07-30T11:59:24 [INFO] FTS indexed documents: 5,558,976
+2019-07-30T11:59:26 [INFO] FTS indexed documents: 5,574,976
+2019-07-30T11:59:28 [INFO] FTS indexed documents: 5,596,976
+2019-07-30T11:59:30 [INFO] FTS indexed documents: 5,666,176
+2019-07-30T11:59:32 [INFO] FTS indexed documents: 5,738,776
+2019-07-30T11:59:34 [INFO] FTS indexed documents: 5,797,176
+2019-07-30T11:59:36 [INFO] FTS indexed documents: 5,858,776
+2019-07-30T11:59:38 [INFO] FTS indexed documents: 5,912,976
+2019-07-30T11:59:40 [INFO] FTS indexed documents: 5,952,176
+2019-07-30T11:59:42 [INFO] FTS indexed documents: 6,024,376
+2019-07-30T11:59:44 [INFO] FTS indexed documents: 6,095,176
+2019-07-30T11:59:46 [INFO] FTS indexed documents: 6,160,176
+2019-07-30T11:59:48 [INFO] FTS indexed documents: 6,229,776
+2019-07-30T11:59:50 [INFO] FTS indexed documents: 6,275,976
+2019-07-30T11:59:52 [INFO] FTS indexed documents: 6,349,776
+2019-07-30T11:59:54 [INFO] FTS indexed documents: 6,414,376
+2019-07-30T11:59:56 [INFO] FTS indexed documents: 6,482,576
+2019-07-30T11:59:59 [INFO] FTS indexed documents: 6,511,176
+2019-07-30T12:00:01 [INFO] FTS indexed documents: 6,565,976
+2019-07-30T12:00:03 [INFO] FTS indexed documents: 6,634,376
+2019-07-30T12:00:05 [INFO] FTS indexed documents: 6,703,576
+2019-07-30T12:00:07 [INFO] FTS indexed documents: 6,768,176
+2019-07-30T12:00:09 [INFO] FTS indexed documents: 6,829,976
+2019-07-30T12:00:11 [INFO] FTS indexed documents: 6,888,576
+2019-07-30T12:00:13 [INFO] FTS indexed documents: 6,917,776
+2019-07-30T12:00:15 [INFO] FTS indexed documents: 6,941,376
+2019-07-30T12:00:17 [INFO] FTS indexed documents: 6,962,176
+2019-07-30T12:00:19 [INFO] FTS indexed documents: 7,038,176

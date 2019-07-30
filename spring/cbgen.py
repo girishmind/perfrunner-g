@@ -174,10 +174,6 @@ class CBGen(CBAsyncGen):
     @quiet
     @timeit
     def n1ql_query(self, query: N1QLQuery):
-        #print(query.statement)
-        #for row in self.client.n1ql_query(query):
-            #print("row")
-            #print(row)        
         tuple(self.client.n1ql_query(query))
 
 

@@ -104,7 +104,7 @@ class MetricHelper:
         total_requests = vitals['requests.count']
 
         throughput = total_requests / test_time
-        return throughput
+        return round(throughput, throughput < 1 and 1 or 0)
 
     def bulk_n1ql_throughput(self, time_elapsed: float) -> Metric:
         metric_info = self._metric_info()
@@ -346,6 +346,7 @@ class MetricHelper:
         title = '{}th percentile secondary scan latency (ms), {}'.format(percentile,
                                                                          self._title)
         metric_info = self._metric_info(metric_id, title)
+        metric_info['category'] = "lat"
 
         cluster = ""
         for cid in self.test.cbmonitor_clusters:
@@ -499,9 +500,13 @@ class MetricHelper:
     def get_indexing_meta(self,
                           value: float,
                           index_type: str,
-                          unit: str = "min") -> Metric:
+                          unit: str = "min",
+                          name: str = "") -> Metric:
         metric_id = '{}_{}'.format(self.test_config.name, index_type.lower())
-        title = '{} index ({}), {}'.format(index_type, unit, self._title)
+        test_name = self._title
+        if name:
+            test_name = name
+        title = '{} index ({}), {}'.format(index_type, unit, test_name)
         metric_info = self._metric_info(metric_id, title)
         metric_info['category'] = index_type.lower()
 
@@ -825,8 +830,12 @@ class MetricHelper:
 
         return num_connections, self._snapshots, metric_info
 
-    def scan_throughput(self, throughput: float) -> Metric:
+    def scan_throughput(self, throughput: float, metric_id_append_str: str = None) -> Metric:
         metric_info = self._metric_info()
+        if metric_id_append_str is not None:
+            metric_id = '{}_{}'.format(self.test_config.name, metric_id_append_str)
+            metric_info = self._metric_info(metric_id=metric_id)
+        metric_info['category'] = "thr"
 
         throughput = round(throughput, 1)
 

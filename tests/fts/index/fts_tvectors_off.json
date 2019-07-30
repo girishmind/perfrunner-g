@@ -7,80 +7,57 @@
     "sourceUUID": "",
     "planParams": {
         "maxPartitionsPerPIndex": 171,
-        "indexPartitions": 6
+        "numReplicas": 0,
+        "hierarchyRules": null,
+        "nodePlanParams": null,
+        "pindexWeights": null,
+        "planFrozen": false
     },
     "params": {
         "doc_config": {
-            "docid_prefix_delim": "",
-            "docid_regexp": "",
             "mode": "type_field",
             "type_field": "type"
         },
         "mapping": {
-            "analysis": {},
-            "default_analyzer": "standard",
+            "default_analyzer": "simple",
             "default_datetime_parser": "dateTimeOptional",
             "default_field": "_all",
             "default_mapping": {
                 "dynamic": false,
                 "enabled": true,
-        	"properties": {
-          		"3x4": {
-            			"dynamic": false,
-            			"enabled": true,
-            			"fields": [
-              			  {
-                			"index": true,
-                			"name": "text",
-                			"type": "text"
-              			  }
-            			]
-          			},
-          		"3x4l": {
-            			"dynamic": false,
-            			"enabled": true,
-            			"fields": [
-              			 {
-                			"index": true,
-                			"name": "text",
-                			"type": "text"
-              			}
-            			]
-          		},
-                        "1x4": {
-                                "dynamic": false,
-                                "enabled": true,
-                                "fields": [
-                                 {
-                                        "index": true,
-                                        "name": "text",
-                                        "type": "text"
-                                }
-                                ]
-                        },
-                        "rand_sent": {
-                                "dynamic": false,
-                                "enabled": true,
-                                "fields": [
-                                 {
-                                        "index": true,
-                                        "name": "text",
-                                        "type": "text"
-                                }
-                                ]
-                        }
+                "properties": {
+                    "text": {
+                        "dynamic": false,
+                        "enabled": true,
+                        "fields": [
+                            {
+                                "name": "text",
+                                "include_term_vectors": false,
+                                "index": true,
+                                "store": false,
+                                "type": "text"
+                            }
+                        ]
+                    }
                 }
             },
             "default_type": "_default",
-            "docvalues_dynamic": true,
-            "index_dynamic": true,
+            "index_dynamic": false,
             "store_dynamic": false,
-            "type_field": "_type"
+            "type_field": "type"
         },
         "store": {
-            "indexType": "scorch",
-            "kvStoreName": ""
+            "kvStoreName": "mossStore"
         }
     },
-    "sourceParams": {}
+    "sourceParams": {
+        "clusterManagerBackoffFactor": 0,
+        "clusterManagerSleepInitMS": 0,
+        "clusterManagerSleepMaxMS": 2000,
+        "dataManagerBackoffFactor": 0,
+        "dataManagerSleepInitMS": 0,
+        "dataManagerSleepMaxMS": 2000,
+        "feedBufferAckThreshold": 0,
+        "feedBufferSizeBytes": 0
+    }
 }

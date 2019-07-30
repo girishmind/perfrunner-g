@@ -1,0 +1,15 @@
+ 
+ -------------- celery@admins-mbp-2.corp.couchbase.com v3.1.25 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-18.6.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         workers:0x1070dd240
+- ** ---------- .> transport:   sqla+sqlite:///perfrunner.db
+- ** ---------- .> results:     sqlite:///results.db
+- *** --- * --- .> concurrency: 12 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> localhost        exchange=localhost(direct) key=localhost
+                
+

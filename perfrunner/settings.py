@@ -275,7 +275,7 @@ class StatsSettings:
 
 class ProfilingSettings:
 
-    INTERVAL = 120  # 30 seconds
+    INTERVAL = 300  # 5 minutes
 
     NUM_PROFILES = 1
 
@@ -460,6 +460,9 @@ class PhaseSettings:
 
     DURABILITY = None
 
+    YCSB_KV_ENDPOINTS = 1
+    YCSB_ENABLE_MUTATION_TOKEN = None
+
     def __init__(self, options: dict):
         # Common settings
         self.time = int(options.get('time', self.TIME))
@@ -560,6 +563,9 @@ class PhaseSettings:
         self.target = float(options.get('target', self.TARGET))
         self.field_count = int(options.get('field_count', self.YCSB_FIELD_COUNT))
         self.field_length = int(options.get('field_length', self.YCSB_FIELD_LENGTH))
+        self.kv_endpoints = int(options.get('kv_endpoints', self.YCSB_KV_ENDPOINTS))
+        self.enable_mutation_token = options.get('enable_mutation_token',
+                                                 self.YCSB_ENABLE_MUTATION_TOKEN)
         self.ycsb_client = options.get('ycsb_client', self.YCSB_CLIENT)
 
         # Subdoc & XATTR
@@ -714,6 +720,7 @@ class GSISettings:
     INCREMENTAL_LOAD_ITERATIONS = 0
     SCAN_TIME = 1200
     INCREMENTAL_ONLY = 0
+    REPORT_INITIAL_BUILD_TIME = 0
 
     def __init__(self, options: dict):
         self.indexes = {}
@@ -737,6 +744,8 @@ class GSISettings:
         self.incremental_load_iterations = int(options.get('incremental_load_iterations',
                                                            self.INCREMENTAL_LOAD_ITERATIONS))
         self.scan_time = int(options.get('scan_time', self.SCAN_TIME))
+        self.report_initial_build_time = int(options.get('report_initial_build_time',
+                                                         self.REPORT_INITIAL_BUILD_TIME))
 
         self.settings = {}
         for option in options:
@@ -791,7 +800,7 @@ class IndexSettings:
         self.couchbase_fts_index_name = options.get('couchbase_fts_index_name',
                                                     self.FTS_INDEX_NAME)
         self.couchbase_fts_index_configfile = options.get('couchbase_fts_index_configfile',
-                                                    self.FTS_INDEX_CONFIG_FILE)
+                                                          self.FTS_INDEX_CONFIG_FILE)
 
     def split_statements(self, statements: str) -> List[str]:
         if statements:
@@ -941,10 +950,12 @@ class YCSBSettings:
 
     REPO = 'git://github.com/couchbaselabs/YCSB.git'
     BRANCH = 'master'
+    SDK_VERSION = None
 
     def __init__(self, options: dict):
         self.repo = options.get('repo', self.REPO)
         self.branch = options.get('branch', self.BRANCH)
+        self.sdk_version = options.get('sdk_version', self.SDK_VERSION)
 
     def __str__(self) -> str:
         return str(self.__dict__)

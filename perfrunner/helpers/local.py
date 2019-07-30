@@ -57,10 +57,11 @@ def backup(master_node:  str, cluster_spec: ClusterSpec, threads: int,
 
 def compact(cluster_spec: ClusterSpec,
             snapshots: List[str],
+            threads,
             wrapper: bool = False):
     if wrapper:
         return
-    cbbackupmgr_compact(cluster_spec, snapshots)
+    cbbackupmgr_compact(cluster_spec, snapshots, threads)
 
 
 def cbbackupwrapper(master_node: str, cluster_spec: ClusterSpec,
@@ -188,13 +189,17 @@ def cbbackupmgr_restore(master_node: str, cluster_spec: ClusterSpec,
     local(cmd)
 
 
-def cbbackupmgr_compact(cluster_spec: ClusterSpec, snapshots: List[str]):
-    cmd = \
-        './opt/couchbase/bin/cbbackupmgr compact ' \
-        '--archive {} --repo default --backup {}'.format(
-            cluster_spec.backup,
-            snapshots[0]
-        )
+def cbbackupmgr_compact(cluster_spec: ClusterSpec, snapshots: List[str],
+                        threads: int):
+
+    flags = ['--archive {}'.format(cluster_spec.backup),
+             '--repo default',
+             '--backup {}'.format(snapshots[0]),
+             '--threads {}'.format(threads) if threads else None]
+
+    cmd = './opt/couchbase/bin/cbbackupmgr compact {}'.format(
+        ' '.join(filter(None, flags)))
+
     logger.info('Running: {}'.format(cmd))
     local(cmd)
 
@@ -393,7 +398,10 @@ def run_ycsb(host: str,
              instance: int = 0,
              fieldlength: int = 1024,
              fieldcount: int = 10,
-             durability: int = None):
+             durability: int = None,
+             kv_endpoints: int = 1,
+             enable_mutation_token: str = None):
+
     cmd = 'bin/ycsb {action} {ycsb_client} ' \
           '-P {workload} ' \
           '-p writeallfields=true ' \
@@ -406,6 +414,7 @@ def run_ycsb(host: str,
           '-p couchbase.upsert=true ' \
           '-p couchbase.epoll={epoll} ' \
           '-p couchbase.boost={boost} ' \
+          '-p couchbase.kvEndpoints={kv_endpoints} ' \
           '-p couchbase.sslMode={ssl_mode} ' \
           '-p couchbase.certKeystoreFile=../{ssl_keystore_file} ' \
           '-p couchbase.certKeystorePassword={ssl_keystore_password} ' \
@@ -416,7 +425,10 @@ def run_ycsb(host: str,
         cmd += '-p couchbase.persistTo={persist_to} '
         cmd += '-p couchbase.replicateTo={replicate_to} '
     else:
-        cmd += '-p couchbase.durability={durability} '.format(durability=durability)
+        cmd += '-p couchbase.durability={durability} '
+
+    if enable_mutation_token is not None:
+        cmd += '-p couchbase.enableMutationToken={enable_mutation_token} '
 
     if ops is not None:
         cmd += ' -p operationcount={ops} '
@@ -445,7 +457,9 @@ def run_ycsb(host: str,
                      ssl_keystore_password=ssl_keystore_password,
                      fieldlength=fieldlength,
                      fieldcount=fieldcount,
-                     durability=durability)
+                     durability=durability,
+                     kv_endpoints=kv_endpoints,
+                     enable_mutation_token=enable_mutation_token)
 
     if soe_params is None:
         cmd += ' -p recordcount={items} '.format(items=items)

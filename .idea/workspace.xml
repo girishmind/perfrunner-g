@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27b3e521-b61e-486f-94f6-c4f193aa25b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/clusters/atlas_setupA.spec" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/atlas_setupA.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfrunner/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfrunner/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfrunner/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfrunner/tests/__init__.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/pipelines/custom-arke_only.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_QF3_20M_fts.test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clusters/iris_fts.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clusters/iris.spec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clusters/atlas_setupA.spec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_Q3_20M_gsi_plasma_ok.test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="46" selection-start-line="46" selection-end-line="49" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>time</find>
+      <find>N1QLThroughputTest</find>
+      <find>n1ql_queries</find>
+      <find>override</find>
+      <find>Creating and building indexes</find>
+      <find>cpu profile</find>
+      <find>FTSLatencyTest</find>
+      <find>Scheduling profiling of</find>
+      <find>Collecting</find>
+      <find>COLLECTORS</find>
+      <find>get_va</find>
+      <find>fts_stats</find>
+      <find>39058</find>
+      <find>profile</find>
+      <find>YCSB</find>
+      <find>YCSBN1QLThroughputTest</find>
+      <find>query:</find>
+      <find>class N1QLThroughputTest</find>
+      <find>Storing query plans</find>
+      <find>ycsb_workloadse_4nodecluster.test</find>
+      <find>YCSBSOETest</find>
+      <find>workload_path</find>
+      <find>N1QLQueryGen</find>
+      <find>ListenAndServe</find>
+      <find>profiling</find>
+      <find>IndexSe</find>
+      <find>create_indexes</find>
+      <find>cp -rf tests/n1ql/fts/index/fts_index.json ../../IdeaProjects/perfrunner/tests/n1ql</find>
+      <find>madhatter_test_suite</find>
+      <find>range-scan</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/tests</dir>
+      <dir>$PROJECT_DIR$/clusters</dir>
+      <dir>$PROJECT_DIR$/tests/fts/tests_FTS/1M</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring/docgen.py" />
+        <option value="$PROJECT_DIR$/clusters/arke_themis_brqx.spec" />
+        <option value="$PROJECT_DIR$/perfrunner/remote/linux.py" />
+        <option value="$PROJECT_DIR$/perfrunner/helpers/cbmonitor.py" />
+        <option value="$PROJECT_DIR$/perfrunner/helpers/remote.py" />
+        <option value="$PROJECT_DIR$/env/lib/python3.5/site-packages/fabric/tasks.py" />
+        <option value="$PROJECT_DIR$/perfrunner/remote/__init__.py" />
+        <option value="$USER_HOME$/.pyenv/versions/3.5.6/lib/python3.5/site-packages/fabric/operations.py" />
+        <option value="$PROJECT_DIR$/perfrunner/remote/context.py" />
+        <option value="$USER_HOME$/.pyenv/versions/3.5.6/lib/python3.5/site-packages/fabric/tasks.py" />
+        <option value="$PROJECT_DIR$/tests/fts/tests_FTS/1M/jts_fts_latency_3node_1M_term_high_temp.test" />
+        <option value="$PROJECT_DIR$/clusters/atlas_setupTemp.spec" />
+        <option value="$PROJECT_DIR$/env/bin/perfrunner" />
+        <option value="$PROJECT_DIR$/tests/fts/tests_FTS/1M/jts_fts_latency_3node_1M_term_high.test" />
+        <option value="$PROJECT_DIR$/tests/fts/tests_FTS/1M/jts_fts_index_3node_1M_initial.test" />
+        <option value="$PROJECT_DIR$/clusters/atlas_setupC_temp.spec" />
+        <option value="$PROJECT_DIR$/tests/fts/index/1B_text_and_bool.json" />
+        <option value="$PROJECT_DIR$/tests/fts/tests_FTS/1B/jts_fts_index_2node_20M_initial.test" />
+        <option value="$PROJECT_DIR$/tests/fts/index/temp.json" />
+        <option value="$PROJECT_DIR$/clusters/atlas_setupA_q.spec" />
+        <option value="$PROJECT_DIR$/clusters/atlas_setupLocal.spec" />
+        <option value="$PROJECT_DIR$/perfrunner/tests/fts.py" />
+        <option value="$PROJECT_DIR$/tests/fts/tests_FTS/1M/jts_fts_latency_3node_1M_facet.test" />
+        <option value="$PROJECT_DIR$/clusters/iris_temp.ini" />
+        <option value="$PROJECT_DIR$/tests/n1ql/n1ql_lat_Q1_20M_10KQops.test" />
+        <option value="$PROJECT_DIR$/tests/n1ql/n1ql_lat_Q1_20M_10KQops_temp.test" />
+        <option value="$PROJECT_DIR$/clusters/iris_temp.spec" />
+        <option value="$PROJECT_DIR$/perfrunner/helpers/worker.py" />
+        <option value="$PROJECT_DIR$/tests/fts/index/fts_tvectors_off_datetime.json" />
+        <option value="$PROJECT_DIR$/tests/n1ql/fts/index/fts_index.json" />
+        <option value="$PROJECT_DIR$/tests/n1ql/n1ql_thr_Q2_20M_gsi_moi_ok.test" />
+        <option value="$PROJECT_DIR$/clusters/iris.spec" />
+        <option value="$PROJECT_DIR$/spring/wgen.py" />
+        <option value="$PROJECT_DIR$/spring/querygen.py" />
+        <option value="$PROJECT_DIR$/tests/fts/data/benchmark/hi.txt" />
+        <option value="$PROJECT_DIR$/tests/fts/index/fts_tvectors_off.json" />
+        <option value="$PROJECT_DIR$/tests/fts/tests_FTS/1M/jts_fts_throughput_3node_1M_term_high.test" />
+        <option value="$PROJECT_DIR$/cbagent/stores.py" />
+        <option value="$PROJECT_DIR$/perfrunner/helpers/metrics.py" />
+        <option value="$PROJECT_DIR$/cbagent/metadata_client.py" />
+        <option value="$PROJECT_DIR$/cbagent/collectors/jts_stats.py" />
+        <option value="$PROJECT_DIR$/perfrunner/helpers/profiler.py" />
+        <option value="$PROJECT_DIR$/perfrunner/tests/n1ql.py" />
+        <option value="$PROJECT_DIR$/perfrunner/helpers/rest.py" />
+        <option value="$PROJECT_DIR$/spring/cbgen.py" />
+        <option value="$PROJECT_DIR$/perfrunner/settings.py" />
+        <option value="$PROJECT_DIR$/perfrunner/tests/__init__.py" />
+        <option value="$PROJECT_DIR$/tests/n1ql/n1ql_fts_thr_QF3_20M_ok.test" />
+        <option value="$PROJECT_DIR$/tests/n1ql/fts/index/fts_qf3_index.json" />
+        <option value="$PROJECT_DIR$/tests/n1ql/n1ql_thr_QF3_20M_fts.test" />
+        <option value="$PROJECT_DIR$/clusters/atlas_setupA.spec" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="3600" />
+    <option name="y" value="-137" />
+    <option name="width" value="1920" />
+    <option name="height" value="989" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="clusters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="n1ql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="n1ql" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perfrunner" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="pipelines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perfrunner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/fts/index" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/fts/index" />
+      <recent name="$PROJECT_DIR$/tests/fts/data/benchmark" />
+      <recent name="$PROJECT_DIR$/tests/fts/tests_FTS/1M" />
+      <recent name="$PROJECT_DIR$/tests/n1ql" />
+      <recent name="$PROJECT_DIR$/clusters" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.runPerfrunner">
+    <configuration name="RunTest" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/cluster" />
+      <option name="PARAMETERS" value="-c clusters/atlas_setupA.spec -t tests/n1ql/n1ql_thr_QF3_20M_fts.test --verbose" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RunTest_orig" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/cluster" />
+      <option name="PARAMETERS" value="-c clusters/atlas_setupA.spec -t tests/fts/tests_FTS/1M/jts_fts_throughput_3node_1M_term_high.test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="install" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/install" />
+      <option name="PARAMETERS" value="-c clusters/atlas_setupA.spec -v 6.5.0-3883" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="install_n1ql" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/install" />
+      <option name="PARAMETERS" value="-c clusters/iris.spec -v 6.5.0-3388" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="install_orig" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/install" />
+      <option name="PARAMETERS" value="-c clusters/atlas_setupA.spec -v 6.5.0-3556" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="perfrunner_n1ql" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/perfrunner" />
+      <option name="PARAMETERS" value="-c clusters/iris.spec -t tests/n1ql/n1ql_lat_Q2_20M_18Kops_8KQops_gsi_ok.test stats.post_to_sf.0 --verbose --remote" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runPerfrunner" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="false" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="JAVA_HOME" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+        <env name="PYTHONPATH" value="$USER_HOME$/Downloads/spring-5.8.7/build/lib.macosx-10.14-x86_64-3.5" />
+        <env name="PATH" value="$PROJECT_DIR$/env/bin:/usr/local/opt/ruby/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin " />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/perfrunner" />
+      <option name="PARAMETERS" value="-c clusters/atlas_setupA.spec -t tests/n1ql/n1ql_thr_QF3_20M_fts.test stats.post_to_sf.0 --verbose --remote" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runPerfrunner_orig" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="false" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="JAVA_HOME" value="/usr" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/perfrunner" />
+      <option name="PARAMETERS" value="-c clusters/atlas_setupA.spec -t tests/fts/tests_FTS/1M/jts_fts_throughput_3node_1M_term_high.test stats.post_to_sf.0 --remote --verbose" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runtest_n1ql" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/cluster" />
+      <option name="PARAMETERS" value="-c clusters/iris.spec -t tests/n1ql/n1ql_lat_Q2_20M_18Kops_8KQops_gsi_ok.test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trim_n1ql" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/ansible-playbook" />
+      <option name="PARAMETERS" value="-i clusters/iris.ini --limit index playbooks/trim.yml" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="uninstall_n1ql" type="PythonConfigurationType" factoryName="Python">
+      <module name="perfrunner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="env/bin/ansible-playbook" />
+      <option name="PARAMETERS" value="-i clusters/iris.ini playbooks/uninstall.yml" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.RunTest" />
+      <item itemvalue="Python.RunTest_orig" />
+      <item itemvalue="Python.runPerfrunner" />
+      <item itemvalue="Python.runPerfrunner_orig" />
+      <item itemvalue="Python.install_orig" />
+      <item itemvalue="Python.uninstall_n1ql" />
+      <item itemvalue="Python.trim_n1ql" />
+      <item itemvalue="Python.install_n1ql" />
+      <item itemvalue="Python.runtest_n1ql" />
+      <item itemvalue="Python.perfrunner_n1ql" />
+      <item itemvalue="Python.install" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27b3e521-b61e-486f-94f6-c4f193aa25b3" name="Default Changelist" comment="" />
+      <created>1556224657588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556224657588</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="3600" y="-137" width="1920" height="989" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.77591974" visible="true" weight="0.23233405" />
+      <window_info id="Structure" order="1" sideWeight="0.22408026" side_tool="true" visible="true" weight="0.23233405" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Gerrit" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3065539" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49815726" visible="true" weight="0.3189066" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49938574" weight="0.35421413" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291714" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50184274" side_tool="true" weight="0.55040556" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32915717" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cbagent/collectors/libstats/typeperfstats.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/helpers/cbmonitor.py</url>
+          <line>305</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/__init__.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/remote/windows.py</url>
+          <line>199</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/remote/linux.py</url>
+          <line>280</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/remote/linux.py</url>
+          <line>278</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/helpers/remote.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/lib/python3.7/site-packages/fabric/tasks.py</url>
+          <line>404</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/__init__.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/fts.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/helpers/monitor.py</url>
+          <line>473</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/helpers/monitor.py</url>
+          <line>504</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/helpers/worker.py</url>
+          <line>149</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/helpers/worker.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/perfrunner/tests/__init__.py</url>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>self._maybe_set_cache</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>meta</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/fts/data/benchmark/docid.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="233560" selection-start-line="233560" selection-end-line="233560" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/tests/fts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fts/data/benchmark/hi_copy.txt" />
+    <entry file="file://$PROJECT_DIR$/perfrunner/helpers/sync.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fts/data/benchmark/hi.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ycsb_workloada_3nodes_cpu_snappy.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ycsb_workloade_1node.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/3/multiprocessing/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="56" column="31" selection-start-line="56" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/soe/ycsb_workloadse_4nodecluster.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/helpers/rest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="575" column="36" selection-start-line="575" selection-end-line="576" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/soe/ycsb_workloadsf_4nodecluster.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="13" selection-start-line="34" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/tests/ycsb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/workloads/ycsb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/helpers/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9486">
+          <caret line="571" column="37" selection-start-line="571" selection-start-column="37" selection-end-line="571" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_lat_Q3_20M_30Kops_960Qops_gsi_moi_ok.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_array_indexing_Q3_20M_between_gsi_moi_ok.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/workloads/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/helpers/worker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/docgen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="504" column="46" lean-forward="true" selection-start-line="504" selection-start-column="46" selection-end-line="504" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/querygen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="228" column="18" selection-start-line="228" selection-start-column="6" selection-end-line="228" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/wgen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="674" column="35" selection-start-line="674" selection-start-column="35" selection-end-line="674" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.5/site-packages/couchbase/n1ql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1082">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/cbgen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="166" column="38" selection-start-line="166" selection-start-column="38" selection-end-line="166" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.5/site-packages/sqlalchemy/testing/replay_fixture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.5/site-packages/sqlalchemy/testing/profiling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-985" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/tests/n1ql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="850" column="8" selection-start-line="850" selection-start-column="8" selection-end-line="850" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/helpers/profiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="802" column="85" selection-start-line="802" selection-start-column="85" selection-end-line="802" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfrunner/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3349">
+          <caret line="220" column="77" selection-start-line="220" selection-start-column="77" selection-end-line="220" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weekly.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="93" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/daily-mad-hatter.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/weekly-alice.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/daily-vulcan.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_fts_thr_QF3_20M_ok.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/custom-arke_only.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_CI3_20M_gsi_moi_false.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_CI3_20M_gsi_moi_ok.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_Q3_20M_gsi_plasma_false.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_Q3_20M_gsi_ok.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/fts/index/fts_qf3_index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_fts_thr_Q21_20M_gsi_moi_ok.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusters/iris_fts.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusters/iris.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/weekly-watson.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/weekly-vulcan.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="68" column="126" selection-start-line="36" selection-start-column="1" selection-end-line="68" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/weekly-spock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pipelines/weekly-mad-hatter.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_Q3_20M_gsi_plasma_ok.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="46" selection-start-line="46" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/n1ql/n1ql_thr_QF3_20M_fts.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusters/atlas_setupA.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python (perfrunner)|Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.5 virtualenv at ~/IdeaProjects/perfrunner/env interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.5 virtualenv at ~/IdeaProjects/perfrunner/env</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python|perfrunner</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Python 3.5 virtualenv at ~/IdeaProjects/perfrunner/env</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
