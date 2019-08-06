@@ -6,6 +6,7 @@ title = QF3, Range Scan, FTS, not_bounded
 component = jts
 category = N1FTY
 sub_category = Throughput
+orderby = q0b00000000
 
 [cluster]
 mem_quota = 20480
