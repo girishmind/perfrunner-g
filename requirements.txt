@@ -4,7 +4,7 @@ awscli==1.10.58
 billiard==3.5.0.2
 boto3==1.4.6
 botocore==1.6.3
-celery==3.1.25
+celery==5.2.2
 cffi==1.7.0
 couchbase==2.5.0
 coverage==4.4.1
